@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 # Define login details
 login_details = {
-    'username': 'praveen',
-    'password': 'portfolio'
+    'username': 'admin',
+    'password': 'password'
 }
 
 @app.route('/')
