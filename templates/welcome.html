@@ -3,11 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Section 1 - Header */
+        .header {
+            background-color: #333; /* Dark color for header */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            /* Styles for logo image */
+            width: 100px; /* Adjust as needed */
+            height: auto;
+        }
+        .nav-links {
+            /* Styles for navigation links */
+            display: flex;
+            gap: 30px; /* Spacing between links */
+        }
+        /* Section 2 - About Me */
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .about-me-message {
+            /* Styles for about me message */
+            width: 50%;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .about-me-photo {
+            /* Styles for about me photo */
+            width: 50%; /* Adjust width */
+            max-width: 300px; /* Max width of the photo */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .about-me-photo img {
+            /* Styles for the image within about-me-photo */
+            max-width: 100%;
+            max-height: 300px; /* Max height of the photo */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Section 3 - Contact */
+        .contact {
+            background-color: #f4f4f4; /* Light background color */
+            padding: 50px;
+        }
+        .contact-form {
+            /* Styles for contact form */
+            max-width: 600px; /* Adjust as needed */
+            margin: 0 auto;
+        }
+        /* Section 4 - Footer */
+        .footer {
+            background-color: #333; /* Dark color for footer */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>Welcome, {{ username }}</h2>
-    <p>This is your welcome page.</p>
-    <a href="/resume">Download Resume</a>
+    <!-- Section 1 - Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="path_to_your_logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Section 2 - About Me -->
+    <div class="about-me">
+        <div class="about-me-message">
+            <h2>About Me</h2>
+            <p>👋 Hello and welcome to my corner of the digital universe! I'm thrilled that you've stopped by to learn more about me as an aspiring techie. Explore my diverse projects, skills, and experiences. Whether tackling challenges or staying updated, I'm eager to learn. Have questions or opportunities? Let's connect! Reach out—I'm ready to collaborate!</p>
+        </div>
+        <div class="about-me-photo">
+            <img src="/static/WhatsApp Image 2024-05-09 at 7.25.39 AM.jpeg" alt="About Me Photo">
+        </div>
+    </div>
+
+    <!-- Section 3 - Contact -->
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <!-- Add your contact form here -->
+        </div>
+    </div>
+
+    <!-- Section 4 - Footer -->
+    <div class="footer">
+        <p>Connect with me:</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">GitHub</a>
+        <a href="#">Docker Hub</a>
+    </div>
 </body>
 </html>
